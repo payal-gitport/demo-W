@@ -47,7 +47,7 @@
                 
             }
             .banner-text h1{
-                font:600 40px 'Noto Sans JP', sans-serif;
+                font:600 60px 'Noto Sans JP', sans-serif;
             }
 
             ul#banner-point li{
@@ -60,12 +60,15 @@
                 display: flex;
                 }
 
-            .colum {
-                
-                padding: 10px;
+            .column {
+                padding: 10px 10px;
                 }
 
-
+            @media screen and (max-width: 768px){
+                .fit-image{
+                    display:none;
+                }
+            }
         </style> 
     
         
@@ -169,7 +172,7 @@
                         </div>
                     </div> 
                     <div class="col-sm-6 text-left">
-                        <img src="img/avocado.png" class="fit-image" style="width:100%">
+                        <img src="img/avocado.png" class="fit-image" style="width:50%">
                     </div>                   
                 </div>    
             </div>
