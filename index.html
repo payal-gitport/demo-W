@@ -19,6 +19,10 @@
     
         <!--<link rel="stylesheet" type="text/css" href="css/style.css">-->
         <style> 
+
+            body{
+                background-color:#ccc;
+            }
             .navbar-nav.navbar-center { 
                 position: absolute; 
                 left: 50%; 
@@ -40,7 +44,7 @@
                 padding: 70px 0px;
             }
 
-            .banner-text{
+            .banner-text, .banner-text-2{
                 padding: 15px 40px;
                 color: black;
                 margin: 0px 10px;
@@ -62,20 +66,58 @@
 
             .column {
                 padding: 10px 10px;
+                margin-left: 20px;
                 }
+
+            .banner-text-2 h1{
+                font:600 40px 'Noto Sans JP', sans-serif;
+            }
+            .banner-text-2 p{
+                padding: 10px 0px;
+                margin: 40px 0px;
+            }
+            
+            .container-fluid{
+                padding: 40px;
+                background-color:white;
+
+                display: -webkit-flex;
+                display: flex;
+            }
+            .carousel-inner  .carousel-item .img-box{
+                width: 80px;
+                height: 80px;
+
+            }
+            .carsousel-indicator{
+                top:250px;
+                margin-bottom: 10px;
+            }
+
+            .video-box{
+                padding: 40px 50px;
+            }
+
+            .card{
+                padding: 20px 20px;
+            }
 
             @media screen and (max-width: 768px){
                 .fit-image{
                     display:none;
                 }
+                #download-card{
+                    display: none;
+                }
             }
+
         </style> 
     
         
     </head>
     <body>
         <div class="fpage" id="home">
-            <nav class="navbar navbar-expand-md bg-dark navbar-dark  fixed-top ">
+            <nav class="navbar navbar-expand-md bg-dark navbar-dark  fixed-top">
                     <a href="" class="navbar-brand" style="height: 60px">avocode</a>
                     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsenavbar" aria-controls="collapsenavbar" aria-expanded="false" aria-label="toggle navigation" >
                         <span class="navbar-toggler-icon"></span>
@@ -141,7 +183,7 @@
                         </ul>
                     </div>
             </nav>
-    
+<!--banner -->
             <div class="container text-center headerset">
                 <div class="row">
                     <div class="col-sm-6 text-left">
@@ -163,10 +205,10 @@
                             </div>
                             <div class="row">
                                 <div class="col-sm-6 col-12">
-                                    <input class="form-control mr-sm-1" type="search" placeholder="Search" aria-label="Search">
+                                    <input class="form-control mr-sm-1" type="search" placeholder="name@company.com" aria-label="Search">
                                 </div>
                                 <div class="col-sm-6 col-12">
-                                    <button class="btn btn-outline-success btn-block my-2 my-sm-0" type="submit">Search</button>  
+                                    <button class="btn btn-outline-success btn-block my-2 my-sm-0" type="submit">START FREE TRIAL</button>  
                                 </div>
                             </div>
                         </div>
@@ -177,8 +219,139 @@
                 </div>    
             </div>
         </div>
+<!--Second Banner-->
+        <div class="container ">
+            <div class="row">
+                <div class="col-sm-5 banner-text-2 text-left column">
+                    <h1>Hand-off your designs to Developers</h1>
+                    <p> Save time on preparing assets & avoid unwanted design changes by non-designers. Stop communication buzz while referencing and discussing your designs. </p>
+                </div>
 
-        <!--Footer-->
+                <div class="col-sm-5 column">
+                    <div class="container-fluid">        
+                                <div class="carousel slide" id="my-carousel" data-ride="carousel">
+                                    <ol class="carousel-indicators">
+                                    <li data-target = "#my-carousel" data-slide-to="0"></li> 
+                                    <li data-target = "#my-carousel" data-slide-to="2"></li> 
+                                    <li data-target = "#my-carousel" data-slide-to="3"></li> 
+                                    </ol>
+        
+                                    <div class="carousel-inner">
+                                        <div class="carousel-item text-left active ">
+                                            <div class="img-box border rounded-circle mr-auto">
+                                                <img src="img/kevin.png" class="d-block w-100 rounded-circle">
+                                            </div>
+                                            <h5 class="py-1 my-1"><strong class="text-Warning text-uppercase">Kevin Ball</strong></h5>
+                                            <h6 class="text-dark m-1"> UX Developer @ Techmates Groups</h6>
+                                            <p class="pt-3 text-dark"> eduihwoid widhqwie eoiu8u32 eiduewu wiewuyei eiuyewiu iureyiewu riewury. weiurywue eduihwoidyei. qiuwyw	ier e qwiuiey reiyueyriq 	uiyriue	yr riewuryiew. </p>
+                                            
+                                        </div>
+                                        <div class="carousel-item text-left">
+                                            <div class="img-box border rounded-circle mr-auto">
+                                                <img src="img/brian.png" class="d-block w-100 rounded-circle">
+                                            </div>
+                                            <h5 class="py-1 my-1"><strong class="text-Warning text-uppercase">Ray barrow</strong></h5>
+                                            <h6 class="text-dark m-1"> Web Dveloper</h6>
+                                            <p class="pt-3 text-dark"> eduihwoid widhqwie eoiu8u32 eiduewu wiewuyei eiuyewiu iureyiewu riewury. weiurywue eduihwoidyei. qiuwyw	ier e qwiuiey reiyueyriq 	uiyriue	yr riewuryiew. </p>
+                                            
+                                        </div>
+                                        <div class="carousel-item text-left">
+                                            <div class="img-box border rounded-circle mr-auto">
+                                                <img src="img/igor.png" class="d-block w-100 rounded-circle">
+                                            </div>
+                                            <h5 class="py-1 my-1"><strong class="text-Warning text-uppercase">Blue barrow</strong></h5>
+                                            <h6 class="text-dark m-1"> Web Dveloper</h6>
+                                            <p class="pt-3 text-dark"> eduihwoid widhqwie eoiu8u32 eiduewu wiewuyei eiuyewiu iureyiewu riewury. weiurywue eduihwoidyei. qiuwyw	ier e qwiuiey reiyueyriq 	uiyriue	yr riewuryiew.</p>
+                                            
+                                        </div>
+                                    </div>
+                                </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+<!--Banner-3-->
+        <div class="container">
+            <div class="row">
+            <div class="col-sm-5 col-6 banner-text-2">
+                <p>Design to Developers</p>
+                <h1> Inspect any design on your own & export assets the way you need them</h1>
+            </div>
+            <div class="col-sm-5 col-6 banner-text-2">
+                <p>Supported languages:</p>
+                <div id="banner-point" class="row">
+                    <div class="column">
+                        <span><i class="fa fa-android " aria-hidden="true"></i></span>
+                    </div>
+                    <div class="column">
+                        <span><i class="fa fa-html5" aria-hidden="true"></i></span>
+                    </div>
+                    <div class="column">
+                        <span><i class="fa fa-bitbucket" aria-hidden="true"></i></span>
+                    </div>
+                    <div class="column">
+                        <span><i class="fa fa-bandcamp" aria-hidden="true"></i></span>
+                    </div>
+                    <div class="column">
+                        <span><i class="fa fa-bandcamp" aria-hidden="true"></i> </span>
+                    </div>
+                    <div class="column">
+                        <span>5+ </span>
+                    </div>
+                </div>
+            </div>
+            </div>
+            <div class="col-12 video-box justify-content-center">
+                <video autoplay loop width="800">
+                    <source src="video/video-1.mp4" type="video/mp4">
+
+                </video>
+            </div>
+        </div>
+
+<!--last 2-cards banner-->
+    <div class="container ">
+        <div class="col-sm-8 banner-text-2 text-left column">
+            <h1>Start saving time on your next design project</h1>
+        <p>Creating UI design takes time and effort, so get the most out of your design by handing off screens at the right time to the right people.</p>
+        
+        </div>
+        <div class="row">
+            <div class="col-lg-6 col-md-6 col-sm-12 col-10 d-block">
+                <div class="card">
+                    <div class="card-body">
+                        <p><i class="fa fa-globe" aria-hidden="true"></i>
+                            Sign up for web app</p>
+                        <h5>Easily sync frames via our Figma plugin and import any Sketch, Adobe XD, Photoshop, or Illustrator design file by drag & drop.</h5>
+                        <div class="row">
+                            <div class="col-sm-6 col-12">
+                                <input class="form-control mr-sm-1" type="search" placeholder="name@company.com" aria-label="Search">
+                            </div>
+                            <div class="col-sm-6 col-12">
+                                <button class="btn btn-outline-success btn-block my-2 my-sm-0" type="submit">START NOW</button>  
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6 col-md-6 col-sm-12 col-10 d-block" >
+                <div class="card" id="download-card">
+                    <div class="card-body">
+                        <p> <i class="fa fa-desktop" aria-hidden="true"></i>Download desktop app</p>
+                        <h5>Auto-installs Sketch, XD, Photoshop, and Illustrator plugins to sync whole files or particular screens for hand-off.</h5>
+                        <div class="row">
+                            <div class="col-sm-6 col-12">
+                                <button class="btn btn-outline-success btn-block my-2 my-sm-0" type="submit">DOWNLOAD APP</button>  
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+<!--Footer-->
         <footer class="footer">
             <div class="container">
                 <div class="row">             
